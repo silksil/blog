@@ -1,5 +1,6 @@
 import App, { Container } from "next/app";
 import LayOut from "../layout/LayOut";
+import { TopNavBar } from "../src/packages/navbar";
 
 class MyApp extends App {
   // Exposes page numbers.
@@ -18,6 +19,7 @@ class MyApp extends App {
     return (
       <Container>
         <LayOut>
+          <TopNavBar childrenLeft={["Sil", "Bil"]} />
           <Component {...pageProps} />
         </LayOut>
       </Container>

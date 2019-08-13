@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+  }
 
 `;
 

@@ -32,8 +32,8 @@ const themes = {
       main: "#FFFFFF",
       dark: "black",
       light: "#f9faff;",
-      contrast: "#828c99",
-      contrastSecondary: "#828c99",
+      contrast: "#2b2b2b",
+      contrastSecondary: "#767676",
       shadow: "rgba(0, 0, 0, 0.06)",
       shadowSecondary: "rgba(166, 173, 201, 0.22)"
     },

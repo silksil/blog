@@ -24,8 +24,6 @@ export const NavBar = styled.div`
 
 export const Left = styled.div`
   display: flex;
-  width: 300px;
-  border: 1px solid red;
 `;
 
 export const Right = styled.div`

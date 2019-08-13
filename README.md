@@ -24,3 +24,8 @@ pages/about.js => /about
 
 ## Theme
 A pre-configured theme is included in layout/themes.js with a dark and light mode. This can be adapted towards your own preferences.
+
+
+
+# Inspiration
+- https://airbnb.design/values-driven-design/

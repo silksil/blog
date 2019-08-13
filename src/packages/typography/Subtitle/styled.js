@@ -6,7 +6,7 @@ const SubtitleStyle = styled.span`
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
-  text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5); */
   color: ${({ theme }) => theme.background.contrastSecondary};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
