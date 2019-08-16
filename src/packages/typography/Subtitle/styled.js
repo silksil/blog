@@ -1,19 +1,24 @@
-import styled from "styled-components";
-import { breakpoints } from "../../breakpoints";
+import { css } from "styled-components";
 
-const SubtitleStyle = styled.span`
+export const SubtitleBase = css`
   margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.6;
-  /* text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5); */
-  color: ${({ theme }) => theme.background.contrastSecondary};
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  ${breakpoints.md} {
-    font-size: 1.25rem;
-  }
+  color: ${({ color }) => color};
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 300;
 `;
 
-export default SubtitleStyle;
+export const l = css`
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 300;
+`;
+
+export const s = css`
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+`;

@@ -1,5 +1,4 @@
 import { css } from "styled-components";
-import { breakpoints } from "../../breakpoints";
 
 export const HeadingBase = css`
   margin: 0;
@@ -7,56 +6,15 @@ export const HeadingBase = css`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: ${({ color }) => color};
-  text-transform: ${({ uppercase }) => uppercase && "uppercase"};
-  text-align: ${props => (props.center ? "center" : null)};
-`;
-
-export const xxl = css`
-  font-size: 1.625rem;
-  font-weight: 900;
-
-  ${breakpoints.md} {
-    font-size: 2.75rem;
-  }
-`;
-
-export const xl = css`
-  font-size: 1.625rem;
-  font-weight: 700;
-
-  ${breakpoints.md} {
-    font-size: 2.25rem;
-  }
+  font-weight: 400;
 `;
 
 export const l = css`
-  font-size: 1.625rem;
-  font-weight: 600;
-
-  ${breakpoints.md} {
-    font-size: 2rem;
-  }
+  font-size: 34px;
+  line-height: 40px;
 `;
 
 export const m = css`
-  font-size: 1.125rem;
-  font-weight: 400;
-
-  ${breakpoints.md} {
-    font-size: 1.375rem;
-  }
-`;
-
-export const s = css`
-  font-size: 1.125rem;
-  font-weight: 700;
-
-  ${breakpoints.md} {
-    font-size: 1.375rem;
-  }
-`;
-
-export const xs = css`
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 `;

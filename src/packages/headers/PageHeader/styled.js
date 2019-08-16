@@ -2,14 +2,14 @@ import styled, { css } from "styled-components";
 import { breakpoints } from "../../breakpoints";
 
 export const HeaderBase = css`
-  background-color: ${({ theme }) => theme.primary.main};
+  background-image: linear-gradient(135deg, #f037a5 0%, #ffcdd2 100%);
   position: relative;
   z-index: 0;
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
   margin-top: -56px;
-  max-height: 85vh;
+  height: 95vh;
 
   &:after {
     content: "";
@@ -80,7 +80,7 @@ export const HeaderImgContainer = styled.div`
     margin: -1px 0;
   }
 
-  &::after {
+  /* &::after {
     content: "";
     position: absolute;
     right: 0;
@@ -107,7 +107,7 @@ export const HeaderImgContainer = styled.div`
         rgba(0, 0, 0, 0.7) 100%
       );
     }
-  }
+  } */
 `;
 
 export const HeaderContent = styled.div`

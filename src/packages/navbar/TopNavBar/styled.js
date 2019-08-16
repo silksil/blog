@@ -9,9 +9,17 @@ export const NavBar = styled.div`
   box-sizing: border-box;
   justify-content: space-between;
   background: ${({ theme }) => theme.primary.main};
-  color: ${({ theme }) => theme.primary.contrastSecondary};
   box-shadow: ${({ theme }) => `0 0 48px ${theme.primary.shadow}`};
-  text-transform: uppercase;
+
+  a {
+    font-size: 16px;
+    font-weight: 150;
+    color: ${({ theme }) => theme.primary.contrast};
+    &:hover {
+      color: ${({ theme }) => theme.primary.contrastSecondary};
+    }
+    margin-right: 24px;
+  }
 
   ${breakpoints.md} {
     padding: 16px 16px;

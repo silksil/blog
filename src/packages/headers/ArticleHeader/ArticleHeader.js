@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Heading, Text } from "../../typography";
+import { Heading, Subtitle, Text } from "../../typography";
 import * as S from "./styled";
 import { GridItem, Grid } from "../../grids";
 
@@ -22,13 +22,13 @@ const Header = ({ title, subtitle, image, meta }) => (
           </Heading>
 
           {subtitle && (
-            <Heading element="h2" color="primaryContrastSecondary">
+            <Subtitle element="h2" color="primaryContrastSecondary">
               {subtitle}
-            </Heading>
+            </Subtitle>
           )}
           {meta && (
             <S.Meta>
-              <Text as="p" size="xs" color={"primaryContrastSecondary"}>
+              <Text as="p" size="xs" color="primaryContrastSecondary">
                 {meta}
               </Text>
             </S.Meta>

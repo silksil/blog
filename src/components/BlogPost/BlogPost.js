@@ -7,7 +7,7 @@ import Grid from "./styled";
 const BlogPost = () => (
   <Fragment>
     <ArticleHeader
-      title="Floortje naar het einde van de wereld"
+      title="Floortje naar het einde van asdf de wereld"
       subtitle="Elke werkdag 20:00 uur op NPO 2"
       meta="Destinations, Inspirations"
       image="https://airbnb.design/wp-content/uploads/2017/07/Opti-blog-061517_Community-Creators_Antigua_Kim-0281-copy.gif"

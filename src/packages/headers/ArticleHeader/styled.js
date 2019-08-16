@@ -15,8 +15,6 @@ export const HeaderImg = styled.img`
   }
 
   ${breakpoints.lg} {
-    margin-left: 17%;
-    width: 83%;
   }
 `;
 
@@ -24,16 +22,6 @@ export const HeaderContent = styled.div`
   background: ${({ theme }) => theme.primary.main};
   background-color: ${({ theme }) => theme.primary.main};
   z-index: 2;
-
-  h1 {
-    font-size: 34px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 300;
-  }
 
   ${breakpoints.md} {
     padding: 32px;

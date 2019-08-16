@@ -34,6 +34,7 @@ const themes = {
       light: "#f9faff;",
       contrast: "#2b2b2b",
       contrastSecondary: "#767676",
+      contrastTertiary: "#E9EBEE",
       shadow: "rgba(0, 0, 0, 0.06)",
       shadowSecondary: "rgba(166, 173, 201, 0.22)"
     },
@@ -66,6 +67,7 @@ const themes = {
       light: "#33383f",
       contrast: "#D7DADC",
       contrastSecondary: "#818384",
+      contrastTertiary: "#767676",
       shadow: "transparent",
       shadowSecondary: "transparent"
     },
