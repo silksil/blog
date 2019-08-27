@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import StyledMenuItem from "./styled";
 
-const MenuItem = ({ isActive, children }) => (
-  <StyledMenuItem isActive={isActive}>{children}</StyledMenuItem>
+const MenuItem = ({ isActive, children, onClick }) => (
+  <StyledMenuItem onClick={onClick} isActive={isActive}> <a> {children} </a></StyledMenuItem>
 );
 
 MenuItem.defaultProps = {

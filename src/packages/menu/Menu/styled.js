@@ -9,8 +9,8 @@ const StyledMenu = styled.ul`
   height: 56px;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 8px;
   font-size: 14px;
+  padding: 0px;
 
   &::after {
     content: "";
@@ -27,11 +27,16 @@ const StyledMenu = styled.ul`
       ${({ theme }) => theme.primary.main}
     );
   }
-
-  padding: 0 16px;
+  ul{
+    padding-inline-start: 0px;
+  }
 
   li {
     padding: 0 16px;
+    &:first-child { 
+    padding-left: 0px
+}
+
   }
   ${breakpoints.md} {
     li {

@@ -8,15 +8,20 @@ export const NavBar = styled.div`
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
-  background: ${({ theme }) => theme.primary.main};
-  box-shadow: ${({ theme }) => `0 0 48px ${theme.primary.shadow}`};
-
+  background: ${({ theme, isTransparent }) => isTransparent ? 'transparent' : theme.primary.main};
+  box-shadow: ${({ theme, isTransparent }) => isTransparent ? 'transparent' :` 0 0 48px ${theme.primary.shadow}`};
+  position: ${({ isTransparent }) => isTransparent ? 'absolute' : 'static'};
+  z-index: 2;
   a {
     font-size: 16px;
-    font-weight: 150;
-    color: ${({ theme }) => theme.primary.contrast};
+    cursor: pointer;
+    font-weight: 380;
+    color: ${({ color }) => color};
     &:hover {
       color: ${({ theme }) => theme.primary.contrastSecondary};
+    }
+    &:active {
+      color: ${({ theme }) => theme.primary.contrast};
     }
     margin-right: 24px;
   }
@@ -37,8 +42,4 @@ export const Left = styled.div`
 export const Right = styled.div`
   display: flex;
   align-items: center;
-
-  > *:not(:last-child) {
-    margin-right: 15px;
-  }
 `;

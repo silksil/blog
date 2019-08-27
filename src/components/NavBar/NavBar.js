@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { TopNavBar } from "../../packages/navbar";
 import Link from "next/link";
 
-const NavBar = props => {
+const NavBar = ({...props}) => {
   const links = [
-    { text: "Home", path: "home" },
+    { text: "Home", path: "/" },
     { text: "Blog", path: "blog" }
   ];
 
@@ -16,7 +16,7 @@ const NavBar = props => {
       </Link>
     ));
 
-  return <TopNavBar childrenRight={createNextLinks(links)} />;
+  return <TopNavBar childrenRight={createNextLinks(links)} {...props}/>;
 };
 
 NavBar.propTypes = {};

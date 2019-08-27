@@ -6,6 +6,8 @@ const StyledMenuItem = styled.li`
   flex-shrink: 0;
 
   a,
+  li,
+  p, 
   span {
     text-transform: uppercase;
     border-bottom: 4px solid

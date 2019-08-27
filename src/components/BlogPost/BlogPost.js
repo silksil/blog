@@ -19,8 +19,8 @@ const BlogPost = () => (
           columnEndSm="span 12"
           columnStartMd="2"
           columnEndMd="span 10"
-          columnStartLg="3"
-          columnEndLg="11"
+          columnStartLg="4"
+          columnEndLg="10"
         >
           <p>
             Pellentesque habitant morbi tristique senectus et netus et malesuada

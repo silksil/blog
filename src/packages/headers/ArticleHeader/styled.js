@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 import { breakpoints } from "../../breakpoints";
+import { Text } from "../../typography";
+
 
 export const HeaderWrapper = styled.div``;
 
@@ -30,19 +32,21 @@ export const HeaderContent = styled.div`
     max-width: 73%;
   }
 
+  h1 {
+    font-weight: 800;
+  }
+
   ${breakpoints.lg} {
     max-width: 58%;
     margin: -64px auto 0px 0px;
   }
 `;
 
-export const Meta = styled.div`
-  p {
-    padding: 0px;
+export const Meta = styled(Text)`
     margin: 0px;
     margin-top: 28px;
     font-size: 12px;
     line-height: 16px;
     color: ${({ theme }) => theme.primary.contrastSecondary};
-  }
+
 `;

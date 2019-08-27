@@ -1,13 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import * as S from "./styled";
+import { useContrastColor} from "../../themes";
 
-const TopNavBar = ({ childrenLeft, childrenRight, ...props }) => (
-  <S.NavBar {...props}>
+const TopNavBar = ({ childrenLeft, childrenRight, color, ...props }) => {
+  const contrastColor = useContrastColor(color);
+  return (
+  <S.NavBar {...props} color={contrastColor}>
     <S.Left>{childrenLeft}</S.Left>
     <S.Right>{childrenRight}</S.Right>
   </S.NavBar>
-);
+)
+}
 
 TopNavBar.defaultProps = {
   childrenLeft: null,
@@ -19,4 +23,4 @@ TopNavBar.propTypes = {
   childrenRight: PropTypes.node
 };
 
-export default TopNavBar;
+export default TopNavBar

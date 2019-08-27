@@ -6,7 +6,7 @@ const SECONDARY = {
 };
 
 const TERTIARY = {
-  main: "#4c7af1",
+  main: "#f037a5",
   dark: "#004fbe",
   light: "#87a9ff",
   contrast: "#FFFFFF"
